@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>University Website Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<link rel="style" href="https://stackpath.boostrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/college-logo2-removebg-preview.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <img src="images/xmark-solid.svg" class="fa1" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="review.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <img src="images/bars-solid.svg" class="fa2" onclick="showMenu()">
+            </nav>
+            <h1>About Us</h1>
+
+        </section>
+
+        <!---- about us content ---- -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacus ipsum, congue ut finibus quis, pretium ut urna. Suspendisse elementum pulvinar placerat. Aliquam eget gravida nulla. Donec convallis, justo et vulputate scelerisque, dui neque fermentum urna, pharetra venenatis nulla diam id mi. Nulla ullamcorper diam urna, ut varius urna tincidunt id. Suspendisse faucibus, nisi non dictum interdum, massa ante semper felis, id iaculis nisl metus id sem.</p>
+                    <a href="blog.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about-us.jpg" alt="aboutus">
+                </div>
+            </div>
+        </section>
+
+        <!----- Footer ----->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p class="about-us">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur, neque blandit ultricies dictum, <br> ante leo semper justo, quis ultrices urna lectus id orci. 
+            </p>
+           
+            <div class="icons">
+                <img src="images/square-facebook.svg" alt="facebook">
+                <img src="images/instagram.svg" alt="instagram">
+                <img src="images/twitter.svg" alt="instagram">
+                <img src="images/linkedin.svg" alt="instagram">
+            </div>
+            <p class="made-with-love">Made with ♥ by Ed</p>
+        </section>
+
+       
+
+        <!--- Javascript for toggle menu ---->
+        <script>
+
+            let navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
