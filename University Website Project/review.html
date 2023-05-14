@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>University Website Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<link rel="style" href="https://stackpath.boostrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/college-logo2-removebg-preview.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <img src="images/xmark-solid.svg" class="fa1" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="review.html">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <img src="images/bars-solid.svg" class="fa2" onclick="showMenu()">
+            </nav>
+            <h1>Reviews</h1>
+
+        </section>
+        
+        <!---- Reviews Page Content ---->
+
+        <section class="testimonial">
+            <h1>Our Reviews</h1>
+            <div class="line"></div>
+            <!-- arrow wrapper contains the review and the arrows -->
+            <div class="arrow-wrapper">
+              <!-- review section -->
+              <div id="reviewWrap" class="review-wrap">
+                <div id="imgBox" class="imageBox"></div>
+                <div id="name"></div>
+                <div id="grade"></div>
+                <div id="description"></div>
+                
+                <div id="rating" class="rating">
+                  <h1 class="rating-sign">Ratings: </h1>
+                  <img src="images/star-solid.svg" class="star-rating" style="display: block;"/>
+                  <img src="images/star-solid.svg" class="star-rating" style="display: block;"/>
+                  <img src="images/star-solid.svg" class="star-rating" style="display: block;"/>
+                  <img src="images/star-solid.svg" class="star-rating"/>
+                  <img src="images/star-solid.svg" class="star-rating"/>
+                  <img src="images/star-regular.svg" class="star-rating" style="display: block;"/>
+                  <img src="images/star-regular.svg" class="star-rating" style="display: block;"/>
+                  <img src="images/star-regular.svg" class="star-rating"/>
+                  <img src="images/star-regular.svg" class="star-rating"/>
+                  <img src="images/star-regular.svg" class="star-rating"/>
+                  
+                </div>
+              </div>
+              <!-- left arrow -->
+              <div class="left-arrow-wrap">
+                <div class="arrow"></div>
+              </div>
+              <!-- right arrow -->
+              <div class="right-arrow-wrap">
+                <div class="arrow"></div>
+              </div>
+            </div>
+        </section>
+
+        <!----- Footer ----->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p class="about-us">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur, neque blandit ultricies dictum, <br> ante leo semper justo, quis ultrices urna lectus id orci. 
+            </p>
+           
+            <div class="icons">
+                <img src="images/square-facebook.svg" alt="facebook">
+                <img src="images/instagram.svg" alt="instagram">
+                <img src="images/twitter.svg" alt="instagram">
+                <img src="images/linkedin.svg" alt="instagram">
+            </div>
+            <p class="made-with-love">Made with ♥ by Ed</p>
+        </section>
+
+        
+          <script>
+
+            let navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            const reviewWrap = document.getElementById("reviewWrap");
+            const leftArrow = document.querySelector(".left-arrow-wrap .arrow");
+            const rightArrow = document.querySelector(".right-arrow-wrap .arrow");
+            const imgBox = document.getElementById("imgBox");
+            const name = document.getElementById("name");
+            const grade = document.getElementById("grade");
+            const description = document.getElementById("description");
+            const rating = document.getElementById("rating")
+        
+            let people = [{
+                photo: 'url("https://thumbs.dreamstime.com/b/teen-student-girl-15489916.jpg")',
+                name: "Grace Angelica",
+                grade: "College Student",
+                description: "As a former student of Clemson University, I can say with confidence that it was an incredible experience. The campus is absolutely beautiful, with stunning architecture and sprawling gardens that make for a peaceful and serene environment to study in. The professors were all experts in their fields and incredibly knowledgeable. They pushed us to think critically and creatively, challenging us to go beyond the textbook and truly understand the material. The classes were engaging and interactive, with lots of opportunities for discussion and collaboration.",
+                rating: 3
+              },
+              {
+                photo: "url('https://www.datocms-assets.com/55010/1631448986-1609827492810345-modelo.jpg?auto=format&fit=max&w=1200')",
+                name: "Jessica Bwashtingston",
+                grade: "College Student",
+                description: "Now, 60+ years after a Clemson BSME, I am astoundingly grateful for a rounded undergraduate engineering education that led to 1) a succession of rewarding employments, and through those, 2) development of cultural appreciation and of language capability in Malaysian/Indonesian - employment experiences in human relations and communication that made me a more effective and versatile engineer. ",
+                rating: 4
+              },
+              {
+                photo: "url('https://thumbs.dreamstime.com/b/student-teen-boy-bag-happy-cap-books-backpack-isolated-white-background-smiling-successful-child-winner-raised-155839615.jpg')",
+                name: "Dylan Smith",
+                grade: "College Student",
+                description: "Clemson has developed a reputation as one of the country's great institutions of higher education, consistently ranking in the top 10 national universities. In addition to outstanding academics, Clemson is known for its great return on investment and entrepreneurial student body",
+                rating: 2
+              },
+              {
+                photo: "url('https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=2000')",
+                name: "Alex Ernest",
+                grade: "College Student",
+                description: "The education teachers are providing here is mailing student job-ready. Students works on various projects and assignment which gives real world experience. The curriculum is updated with all the recent and old developments of industries.",
+                rating: 5
+
+              }
+            ];
+        
+            // set the first person
+            imgBox.style.backgroundImage = people[0].photo;
+            name.innerText = people[0].name;
+            grade.innerText = people[0].grade;
+            description.innerText = people[0].description;
+            let currentPerson = 0;
+        
+            //Select the side where you want to slide
+            function slide(side, personNumber) {
+              let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+              let descriptionHeight = description.offsetHeight + "px";
+              //(+ or -)
+              let side1symbol = side === "left" ? "" : "-";
+              let side2symbol = side === "left" ? "-" : "";
+        
+              setTimeout(() => {
+                imgBox.style.backgroundImage = people[personNumber].photo;
+              }, 0);
+              setTimeout(() => {
+                description.style.height = descriptionHeight;
+              }, 100);
+              setTimeout(() => {
+                name.innerText = people[personNumber].name;
+              }, 200);
+              setTimeout(() => {
+                grade.innerText = people[personNumber].grade;
+              }, 300);
+              setTimeout(() => {
+                description.innerText = people[personNumber].description;
+              }, 400);
+              setTimeout(() => {
+                
+                const elements = rating.children;
+                const personRating = people[personNumber].rating;
+
+                for(let i = 1; i < 11; i++){
+                    
+                    elements.item(i).style.display = "none";
+                    
+                }
+                
+                  for(let i = 1; i < personRating + 1; i++){
+                    
+                    elements.item(i).style.display = "block";
+                    
+                  }
+
+                  const deletedRating = (11 - personRating);
+                  for(let i = 7; i < deletedRating + 1; i++){
+                    elements.item(i).style.display = "block";
+                    
+                  }
+                  
+              }, 500);
+            }
+        
+            function setNextCardLeft() {
+              if (currentPerson === 3) {
+                currentPerson = 0;
+                slide("left", currentPerson);
+              } else {
+                currentPerson++;
+              }
+        
+              slide("left", currentPerson);
+            }
+        
+            function setNextCardRight() {
+              if (currentPerson === 0) {
+                currentPerson = 3;
+                slide("right", currentPerson);
+              } else {
+                currentPerson--;
+              }
+        
+              slide("right", currentPerson);
+            }
+        
+            leftArrow.addEventListener("click", setNextCardLeft);
+            rightArrow.addEventListener("click", setNextCardRight);
+          </script>
+    </body>
+</html>
+    
